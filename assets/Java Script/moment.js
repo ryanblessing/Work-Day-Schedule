@@ -4,13 +4,19 @@ var time = moment();
 var displayMoment = document.getElementById("currentDay");
 //projecting time onto HTML and the type od dat format i want
 displayMoment.innerHTML = time.format("MMMM Do YYYY, h:mm a");
-var nowTIme = moment().hours()
+var nowTime = moment().hours()
 
 
 //time color changes for current-red, past-grey, future-green
 
+$("hour").each(function() {
 
+    if (parseInt($(this).data < time)
+    )
+}
 
+    // parseInt turns a string to a integer
+  
 
 
 
