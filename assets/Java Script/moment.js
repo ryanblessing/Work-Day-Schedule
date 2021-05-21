@@ -28,3 +28,12 @@ $(".hour").each(function() {
     
   
 //return and save into local storage
+ $(".save-btn").click(function() {
+
+    var event = $(this).text("textarea").value()
+        console.log(event);
+
+     localStorage.setItem('event',save-btn);
+     localStorage.getItem('event');
+
+ })
