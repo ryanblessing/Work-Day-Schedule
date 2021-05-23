@@ -34,17 +34,6 @@ $(".hour").each(function () {
 
 })
 
-
-//return and save into local storage
-/*
- var saveEvent = function() {
-
-     localStorage.setItem("text", json.stringify(saveEvent));
-     localStorage.getItem("text");
-
- }
-
- */
 var saveBtn = $('.save-btn');
 
 for (var i = 0; i < saveBtn.length; i++) {
@@ -53,7 +42,6 @@ for (var i = 0; i < saveBtn.length; i++) {
         var rowId = $(this).siblings("textarea").attr("id");
         localStorage.setItem(rowId, textAreaBlock);
     });
-    //                                            ^^^^^^^^^^^^^^^^^^^
 }
 
 for(var i = 1; i < 18; i++){
@@ -61,4 +49,5 @@ for(var i = 1; i < 18; i++){
     $(`#row-${i}`).val(textAreaInfo);
 
 }
+
 
